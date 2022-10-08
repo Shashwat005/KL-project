@@ -3,8 +3,8 @@
 describe("signUp Flow",() =>
 { 
     beforeEach ( function()  {
-      cy.visit("https://auth.dev.kloudlite.io")
-     cy.url().should('include','auth.dev.kloudlite.io/login')
+      cy.visit("https://auth.kloudlite.io")
+     cy.url().should('include','auth.kloudlite.io/login')
      cy.clearCookies()
 
     })
@@ -31,7 +31,7 @@ it('New email',function()
     cy.get('.flex-col.items-center > :nth-child(1) > .transition-colors > .flex').click()  // back button
     cy.contains('SignUp With Email').click()
     cy.get('.gap-3 > :nth-child(1) > .flex > .w-full').type('shtt')
-    cy.get('.gap-3 > :nth-child(2) > .flex > .w-full').type('sdom@mailinator.com')
+    cy.get('.gap-3 > :nth-child(2) > .flex > .w-full').type('sdop@mailinator.com')
     cy.get(':nth-child(3) > .flex > .w-full').type(123456789)
     cy.get(':nth-child(4) > .flex > .w-full').type(123456789)
     cy.contains('Sign Up').click()
