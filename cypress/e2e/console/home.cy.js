@@ -10,13 +10,10 @@ it('login', function()  {
        cy.contains('Sign in').click()
        cy.wait(1000)
        cy.url().should('include','/home')
-
-
-      // cy.get('.overflow-hidden > .flex-1').type('Qwert').select('')
-
-
-
-
+       //cy.contains('Plaxonic', { timeout: 10000 }).should('be.visible')
+       cy.get('.overflow-hidden > .flex-1').focus().type('Xyz')
+     
+      
 
 })
 

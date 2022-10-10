@@ -23,7 +23,7 @@ describe('Check Functionality',function (){
 
             expect(cy.get('.divide').children().length <=0,true)
             cy.get('.divide').first().click()
-            cy.contains('Computes').should('be.visible').click()
+            cy.contains('Computes').click()
             cy.url().should('include','computes')
             cy.contains('Add Provider').should('be.visible').click()
              cy.get('body').then((body) => {

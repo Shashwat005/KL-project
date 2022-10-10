@@ -15,6 +15,6 @@ describe('Check Functionality',function (){
            cy.contains('Notification').click()
            cy.url().should('include','notification')
      
-           cy.close()
+          
    })
 })
