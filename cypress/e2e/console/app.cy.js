@@ -22,6 +22,10 @@ cy.get('.flex flex-col leading-normal').select('Xyz').click()
 
 
 
+cy.get('[href="/apps/?projectId=proj-hinviqepcek1k1stojnu5pg1-z0w&accountId=acc-49cslf3qe3bi-fcqyg7shwrnuvqq"] > .bg-white > .gap-4')
+
+cy.get('[href="/apps/?projectId=proj-9rupx57f2lawxzf8izunydxhd8gw&accountId=acc-49cslf3qe3bi-fcqyg7shwrnuvqq"] > .bg-white > .gap-4')
+
 
 
     })

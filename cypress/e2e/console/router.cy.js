@@ -12,7 +12,11 @@ describe('home functionality',function(){
            cy.wait(1000)
            cy.url().should('include','/home')
 
-
+           cy.get('.overflow-hidden > .flex-1').focus().type('single-67714')                     //Search
+           cy.get('.gap-4 > .flex-col > .font-medium').click()
+           cy.url().should('include','https://console.kloudlite.io/apps')
+           cy.contains('single').should('be.visible')
+           cy.get('[href="/routers"] > .relative').click()                               // Select Router  
 
     })
 

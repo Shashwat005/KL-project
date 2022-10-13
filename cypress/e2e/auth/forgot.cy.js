@@ -15,7 +15,7 @@ describe ('fogot flow', function(){
     cy.url().should('include','forgot-password')
     cy.get('.gap-3 > .flex-col > .flex > .w-full').type("shashwat@gmail.com")
     cy.contains('Send Reset Instruction').click()
-    cy.contains('Email id deoes not exist').should('be.visible')
+    cy.contains('no account present').should('be.visible')
     cy.url().should('include','forgot-password')
 
   })
@@ -30,7 +30,7 @@ describe ('fogot flow', function(){
      cy.contains('Password reset email sent').should('be.visible')
      cy.url().should('include','reset-email-sent')
 
-     close()
+    
 
     
   

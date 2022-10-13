@@ -37,13 +37,14 @@ describe("SignIn Validation",() =>
      cy.wait(1000)
      cy.url().should('include','/home')
      cy.get('.bg-neutral-100 > svg').click()
+     cy.wait(1000)
      cy.get(':nth-child(5) > a > .gap-2 > .flex').click()     //Logout
      cy.url().should('include','login')
 
 
 
 
-        close()
+      
  })
 
    /*it('SignIn thriough Github', function() {
