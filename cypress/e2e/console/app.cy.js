@@ -25,7 +25,9 @@ describe('Create app',function(){
          cy.get('.py-6 > .transition-colors > .flex').click()                                                 // Let's get started button
         cy.wait(1000)
 
-       
+     
+     // Compute   
+
        // cy.url().should('include','/create-app/containers')
         cy.contains('Proceed').click()                                                          //TODO:Valiidation Error
      cy.wait(1000)

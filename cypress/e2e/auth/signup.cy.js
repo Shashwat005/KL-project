@@ -31,7 +31,7 @@ it('New email',function()
     cy.get('.flex-col.items-center > :nth-child(1) > .transition-colors > .flex').click()  // back button
     cy.contains('SignUp With Email').click()
     cy.get('.gap-3 > :nth-child(1) > .flex > .w-full').type('shtt')
-    cy.get('.gap-3 > :nth-child(2) > .flex > .w-full').type('spl@mailinator.com')
+    cy.get('.gap-3 > :nth-child(2) > .flex > .w-full').type('spf@mailinator.com')
     cy.get(':nth-child(3) > .flex > .w-full').type(123456789)
     cy.get(':nth-child(4) > .flex > .w-full').type(123456789)
     cy.contains('Sign Up').click()

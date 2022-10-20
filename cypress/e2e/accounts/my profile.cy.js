@@ -65,7 +65,7 @@ it('Devices Section',function() {
               cy.url().should('include','device')
             //cy.get('.css-10bl27q-indicatorContainer').click()                          // Select Account dropdown
             //cy.get('. css-yxvrel-singleValue').contains('plaxonic').click()           // Select account
-             cy.contains('Add Devices').click({force: true})
+             cy.contains('Add Devices').focus().click({force: true})
              cy.get('.gap-6 > .flex-col > .flex > .w-full').type('apd')                                     
              cy.contains('Cancel').click()
              cy.contains('Add Devices').focus().click({force: true})
